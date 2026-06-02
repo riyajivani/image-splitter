@@ -1,0 +1,57 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+/* Canvas wrapper classes */
+.flex-1 {
+  flex: 1;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-gray-900 {
+  background-color: #121212;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
