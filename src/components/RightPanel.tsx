@@ -5,7 +5,7 @@ import type { ExportFormat } from '../utils/imageSplitter';
 import './Panels.css';
 
 export const RightPanel: React.FC = () => {
-  const { originalFile, image, imageDimensions, imageType, guides, setPreviewSlices, setIsPreviewOpen } = useStore();
+  const { originalFile, image, imageDimensions, imageType, guides, previewSlices, setPreviewSlices, setIsPreviewOpen } = useStore();
   const [exportFormat, setExportFormat] = useState<ExportFormat>('original');
   const [quality, setQuality] = useState(0.9);
   const [isExporting, setIsExporting] = useState(false);
@@ -141,7 +141,7 @@ export const RightPanel: React.FC = () => {
           disabled={isExporting}
           className="btn btn-accent mt-2"
         >
-          {isExporting ? 'Exporting...' : 'Direct Export ZIP'}
+          {isExporting ? 'Exporting...' : 'Export ZIP'}
         </button>
       </div>
     </div>
